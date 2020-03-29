@@ -1,0 +1,43 @@
+.details {
+  background-color: #FFFFFF;
+  width: 287px;
+  height: 170px;
+  padding: 50px 20px;
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+
+  h3 {
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    width: 238px;
+    height: 18px;
+  }
+  hr {
+    margin: 25px 0;
+    border: 0.5px solid #000;
+  }
+  p {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+
+    span {
+      background-color: #F7F7F7;
+      border-radius: 5px;
+      width: 198px;
+      height: 12px;
+
+      &:last-child {
+        width: 44px;
+      }
+    }
+    &:last-child {
+      span {
+        background-color: #C9C9C9;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+header {
+  background: #fff;
+  border-bottom: 0.5px solid #707070;
+  padding: 12px 0;
+  margin-bottom: 0;
+  display:none;
+  transition: all 1s ease-out;
+
+  @media (min-width: 900px) {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    .color__a{ fill:#00de91; }
+    .color__b{ fill:#f9f9f9; }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    ul {
+      display: flex;
+
+      li {
+        background-color: #8d8d8d;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+        height: 18px;
+        margin: 0 20px;
+      }
+    }
+  }
+}

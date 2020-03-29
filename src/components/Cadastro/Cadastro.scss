@@ -1,0 +1,116 @@
+.form {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 35px;
+
+  @media (min-width: 1200px) {
+    width: 100%;
+    padding: 0;
+  }
+
+  &__group {
+    position: relative;
+    margin-bottom: 25px;
+
+    input:focus~label.placeholder,
+    input:valid~label.placeholder {
+      top: 0;
+      left: 1px;
+    }
+
+    label + .MuiInput-formControl {
+      margin-top: 10px;
+    }
+
+    input,
+    select {
+      border: 0;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .MuiFormLabel-root {
+      font-size: 16px;
+      letter-spacing: 0;
+      color: #C9C9C9;
+      top: 0;
+      transition: all .2s ease;
+      display: block;
+      position: absolute;
+      cursor: text;
+      z-index: 1;
+      pointer-events: none;
+      &.Mui-focused {
+        color: #C9C9C9;
+      }
+    }
+    .MuiInput-underline {
+      &:after {
+        border-bottom: none;
+      }
+      &:before {
+        border-bottom: none;
+      }
+      &:hover:not(.Mui-disabled):before {
+        border-bottom: 0;
+      }
+    }
+
+    &-error {
+      color: #EB5757;
+      font-size: 11px;
+      margin: 5px 0;
+    }
+    &.has-error {
+      input {
+        border-bottom: 1px solid #EB5757;
+      }
+    }
+    .css-2b097c-container:focus {
+      border: 0;
+    }
+    .css-yk16xz-control {
+      border: 0;
+      border-radius: 0;
+      border-bottom: 1px solid #ccc;
+    }
+    .css-g1d714-ValueContainer {
+      padding-left: 5px;
+    }
+    .css-1pahdxg-control:hover {
+      border: 0;
+    }
+    .css-1wa3eu0-placeholder {
+      font-size: 16px;
+      color: #C9C9C9;
+    }
+  }
+
+  .grid {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+      width: 47%;
+    }
+  }
+
+  .btn__submit {
+    background: #DE4B4B;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    float: right;
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+    height: 51px;
+
+    @media (min-width: 1200px) {
+      width: 246px;
+      margin-bottom: 60px;
+    }
+  }
+}
