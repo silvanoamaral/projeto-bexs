@@ -6,6 +6,7 @@
   "scripts": {
     "server": "node app/server/index.js",
     "dev": "webpack-dev-server --config webpack/webpack.dev.js --open",
+    "build": "webpack -p --config webpack/webpack.prod.js",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run dev\" "
   },
   "keywords": [],
