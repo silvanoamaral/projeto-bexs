@@ -11,9 +11,8 @@ module.exports = merge(common, {
 		historyApiFallback: true,
 		port: 8002,
 		proxy: {
-			'/api': {
-				target: 'http://localhost:5002',
-				secure: false
+			'/pagar': {
+				target: 'http://localhost:5002'
 			}
 		}
 	},

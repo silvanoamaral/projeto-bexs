@@ -2,17 +2,13 @@
 
 const express    = require('express')
 const path       = require('path')
-const bodyParser = require('body-parser')
 
 const app = express()
 const port = process.env.PORT || 5002
 
-//const { endpoint } = require('../modules/router')
-
-//app.use(bodyParser.urlencoded({ extended: true }))
-//app.use(bodyParser.json())
-
-//app.use('/api/router', endpoint)
+app.use('/pagar', function(req, res) {
+  res.status(200).send({message: 'Chamada REST ;)' })
+})
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('dist'))
